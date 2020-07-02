@@ -13,17 +13,146 @@ const render = require("./lib/htmlRenderer");
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
+function validation(value) {
+	if (value != "" || " ") {
+		return true;
+	} else {
+		return "Error: Either Blank or No user input.";
+	}
+}
+const employeeQuestions = [
+	{
+		type: "input",
+		message: "Employee name:",
+		name: "name",
+	},
+	{
+		type: "input",
+		message: "Employee ID:",
+		name: "id",
+	},
+	{
+		type: "input",
+		message: "Employee Email:",
+		name: "email",
+	},
+];
+const managerQuestions = [
+	{
+		type: "input",
+		message: "Office Number:",
+		name: "officeNumber",
+	},
+];
 
+const engineerQuestions = [
+	{
+		type: "input",
+		message: "GitHub link:",
+		name: "gitHub",
+	},
+];
+const internQuestions = [
+	{
+		type: "input",
+		message: "School you're attending:",
+		name: "school",
+	},
+];
+const addMoreMembers = [
+	{
+		type: "confirm",
+		name: "newTeamMembers",
+		message: "Add team member?",
+		default: false,
+	},
+];
+// question for role of new team member
+const teamMemberRole = [
+	// asks for the team member's role (not prompting for manager since there should only be one manager)
+	{
+		type: "list",
+		name: "role",
+		message: "Team member role:",
+		choices: ["Engineer", "Intern", "Manager"],
+		validate: validation,
+	},
+];
+engineerQuestions.push(...employeeQuestions);
+internQuestions.push(...employeeQuestions);
+managerQuestions.push(...employeeQuestions);
+
+var employeeData = [];
+function add() {
+	inquirer.prompt(addMoreMembers).then((answer) => {
+		if (answer.newTeamMembers) {
+			inquirer.prompt(teamMemberRole).then((roleSelection) => {
+				switch (roleSelection.role) {
+					case "Manager":
+						inquirer.prompt(managerQuestions).then((managerAnswers) => {
+							let newManager = new Manager(
+								managerAnswers.name,
+								managerAnswers.id,
+								managerAnswers.email,
+								managerAnswers.officeNumber
+							);
+							// appending manager data into the employeeData array
+							employeeData.push(newManager);
+							// invoking add() function to prompt for additional of team members
+							add();
+						});
+						break;
+					case "Engineer":
+						inquirer.prompt(engineerQuestions).then((engineerAnswers) => {
+							let newEngineer = new Engineer(
+								engineerAnswers.name,
+								engineerAnswers.id,
+								engineerAnswers.email,
+								engineerAnswers.gitHub
+							);
+							// appending engineer data into the employeeData array
+							employeeData.push(newEngineer);
+							// invoking add() function here to create a recursive (objects calling themselves) loop
+							add();
+						});
+						break;
+					case "Intern":
+						inquirer.prompt(internQuestions).then((internAnswers) => {
+							let newIntern = new Intern(
+								internAnswers.name,
+								internAnswers.id,
+								internAnswers.email,
+								internAnswers.school
+							);
+							// appending intern data into the employeeData array
+							employeeData.push(newIntern);
+							// invoking add() function here to create a recursive (objects calling themselves) loop
+							add();
+						});
+						break;
+// Move the default out as we want it to render the HTML for other cases as well not as a default
+					default:
+						let htmlOutput = render(employeeData);
+						// make fs.writeFile call to render an html output
+						fs.writeFile(outputPath, htmlOutput, function (err) {
+							if (err) {
+								return console.log(err);
+							}
+						});
+				}
+			});
+		}
+	});
+}
+add();
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
-
 // After you have your html, you're now ready to create an HTML file using the HTML
 // returned from the `render` function. Now write it to a file named `team.html` in the
 // `output` folder. You can use the variable `outputPath` above target this location.
 // Hint: you may need to check if the `output` folder exists and create it if it
 // does not.
-
 // HINT: each employee type (manager, engineer, or intern) has slightly different
 // information; write your code to ask different questions via inquirer depending on
 // employee type.
