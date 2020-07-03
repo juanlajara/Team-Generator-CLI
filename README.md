@@ -14,9 +14,9 @@ so that I have quick access to emails and GitHub profiles
 
 ## 📦 Setup, Testing and Instructions:
 
-The `package.json` file, includes the package _dependencies_ & _DevDependencies_ , therefore to install all the necessary packages : _In terminal_, navigate to the folder that contains the _package.json_ and execute `npi install`.
+The `package.json` file, includes the package _dependencies_ & _DevDependencies_ , therefore to install all the necessary packages : _In terminal_, navigate to the folder that contains the _package.json_ file and execute `npi install`.
 
-We are using [jest](https://jestjs.io/) for running tests execute `npm run test` _in terminal_ to run test.
+We are using [jest](https://jestjs.io/) for running tests. Execute `npm run test` _in terminal_ to run test.
 
 Then last but not least execute `node app.js` to start the application.
 
