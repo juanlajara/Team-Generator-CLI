@@ -61,8 +61,6 @@ app.js         // Runs the application
 
 <details>
 <summary>🌟 Screenshots (click to view/collapse)</summary>
-<img src="./assets/img/GitDrunk1.PNG">
-<img src="./assets/img/GitDrunk2.PNG">
-<img src="./assets/img/GitDrunk3.PNG">
-<img src="./assets/img/GitDrunk4.PNG">
+<img src="./Assets/Demo Image 1.png">
+<img src="./Assets/Demo Image 2.png">
 </details>
