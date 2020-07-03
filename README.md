@@ -1,8 +1,6 @@
 <h1 align='center'>Team Generator CLI</h1>
 
-<img alt="GitHub Issues badge" src="https://img.shields.io/github/issues/juanlajara/Team-Generator-CLI">
-<img alt="GitHub Stars badge" src="https://img.shields.io/github/stars/juanlajara/Team-Generator-CLI">
-<img alt="GitHub Forks badge" src="https://img.shields.io/github/forks/juanlajara/Team-Generator-CLI">
+<img alt="GitHub Issues badge" src="https://img.shields.io/github/issues/juanlajara/Team-Generator-CLI"> <img alt="GitHub Stars badge" src="https://img.shields.io/github/stars/juanlajara/Team-Generator-CLI"> <img alt="GitHub Forks badge" src="https://img.shields.io/github/forks/juanlajara/Team-Generator-CLI">
 
 ## 💡 Project Overview
 
