@@ -61,23 +61,28 @@ app.js         // Runs the application
 
 <h2>📓 Contributor(s)</h2>
 
-<h3>Dre Lajara</h3>
+<h4>Dre Lajara</h4>
 <ul>
     <li><a href='https://juanlajara.github.io/portfolio.html' target='_blank'>Website</a></li>
     <li><a href='https://www.linkedin.com/in/juan-andres-lajara-179a8442' target='_blank'>LinkedIn</a></li>
     <li><a href='https://github.com/juanlajara' target='_blank'>GitHub</a></li>
 </ul>
 
-<h3>Kevin Holder</h3>
+<h4>Kevin Holder</h4>
 <ul>
     <li><a href='https://github.com/kholder777' target='_blank'>GitHub</a></li> 
     <li><a href='https://www.linkedin.com/in/kevin-holder-25476788/' target='_blank'>LinkedIn</a></li> 
 </ul>
 
-<h3>Jordan Neill</h3>
+<h4>Jordan Neill</h4>
 <ul>
     <li><a href='https://github.com/jordanalexis6'>GitHub</a></li>
     <li><a href='https://www.linkedin.com/in/jordan-neill-a48b681a0/' target='_blank'>LinkedIn</a></li>
+</ul>
+<h4>Krystal Estarei Duran</h4>
+<ul>
+    <li><a href='https://github.com/KEDuran'>GitHub</a></li>
+    <li><a href='https://www.linkedin.com/in/krystal-e-duran-b64552123/' target='_blank'>LinkedIn</a></li>
 </ul>
 
 ## 📽️ The following animation demonstrates the application's functionality:
