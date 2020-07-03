@@ -12,7 +12,7 @@ I want to generate a webpage that displays my team's basic info
 so that I have quick access to emails and GitHub profiles
 ```
 
-## 📦 Installation Instructions:
+## 📦 Setup, Testing and Instructions:
 
 The `package.json` file, includes the package _dependencies_ & _DevDependencies_ , therefore to install all the necessary packages : _In terminal_, navigate to the folder that contains the _package.json_ and execute `npi install`.
 
@@ -54,6 +54,28 @@ app.js         // Runs the application
 - User can use the CLI to generate an HTML page that displays information about their team.
 
 - All tests must pass.
+
+<h2>📓 Contributor(s)</h2>
+
+<h3>Dre Lajara</h3>
+<ul>
+    <li><a href='https://juanlajara.github.io/portfolio.html' target='_blank'>Website</a></li>
+    <li><a href='https://www.linkedin.com/in/juan-andres-lajara-179a8442' target='_blank'>LinkedIn</a></li>
+    <li><a href='https://github.com/juanlajara' target='_blank'>GitHub</a></li>
+</ul>
+
+<h3>Kevin Holder</h3>
+<ul>
+    <li><a href='https://github.com/kholder777' target='_blank'>GitHub</a></li> 
+    <li><a href='https://www.linkedin.com/in/kevin-holder-25476788/' target='_blank'>LinkedIn</a></li> 
+</ul>
+
+<h3>Jordan Neill</h3>
+<ul>
+    <li><a href='https://github.com/jordanalexis6'>GitHub</a></li>
+    <li><a href='https://www.linkedin.com/in/jordan-neill-a48b681a0/' target='_blank'>LinkedIn</a></li>
+    <li>michael.srithapin@gmail.com</li>
+</ul>
 
 ## 📽️ The following animation demonstrates the application's functionality:
 
