@@ -18,6 +18,8 @@ The `package.json` file, includes the package _dependencies_ & _DevDependencies_
 
 We are using [jest](https://jestjs.io/) for running tests execute `npm run test` _in terminal_ to run test.
 
+Then last but not least execute `node app.js` to start the application.
+
 ## 🗄️ Folder Outline
 
 ```
