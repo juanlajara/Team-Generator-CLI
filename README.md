@@ -83,6 +83,10 @@ app.js         // Runs the application
 
 <details>
 <summary>🌟 Screenshots (click to view/collapse)</summary>
+1 of 2
 <img src="./Assets/Demo Image 1.png">
+
+2 of 2
+
 <img src="./Assets/Demo Image 2.png">
 </details>
