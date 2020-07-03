@@ -74,7 +74,6 @@ app.js         // Runs the application
 <ul>
     <li><a href='https://github.com/jordanalexis6'>GitHub</a></li>
     <li><a href='https://www.linkedin.com/in/jordan-neill-a48b681a0/' target='_blank'>LinkedIn</a></li>
-    <li>michael.srithapin@gmail.com</li>
 </ul>
 
 ## 📽️ The following animation demonstrates the application's functionality:
