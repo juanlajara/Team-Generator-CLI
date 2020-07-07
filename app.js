@@ -12,7 +12,6 @@ const render = require("./lib/htmlRenderer");
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
-// Test
 function validation(value) {
 	if (value != "") {
 		return true;
@@ -137,6 +136,10 @@ function add() {
 		} else {
 			let htmlOutput = render(employeeData);
 			// make fs.writeFile call to render an html output
+			// Create the output directory if the output path doesn't exist
+			if (!fs.existsSync(OUTPUT_DIR)) {
+				fs.mkdirSync(OUTPUT_DIR);
+			}
 			fs.writeFile(outputPath, htmlOutput, function (err) {
 				if (err) {
 					return console.log(err);
